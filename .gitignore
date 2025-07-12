@@ -1,0 +1,16 @@
+# macOS hidden files
+.DS_Store
+
+# Environment files
+.env
+
+# Node.js dependencies
+node_modules/
+
+# Logs
+*.log
+
+
+# VSCode settings
+.vscode/
+.env
