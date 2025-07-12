@@ -1,0 +1,30 @@
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode nav,
+body.dark-mode footer {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .home .text-two,
+body.dark-mode .home .text-three,
+body.dark-mode .topic,
+body.dark-mode .skills-details .experience .num,
+body.dark-mode .skills-details .experience .exp {
+  color: #90caf9;
+}
+
+body.dark-mode .button button,
+body.dark-mode .scroll-button a {
+  background-color: #90caf9;
+  color: #000;
+}
+
+body.dark-mode .button button:hover {
+  background-color: #fff;
+  color: #4070f4;
+}
