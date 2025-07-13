@@ -1,8 +1,5 @@
 const nodemailer = require('nodemailer');
 const connectDB = require('../db');
-console.log('EMAIL:', process.env.EMAIL);
-console.log('EMAIL_PASS:', process.env.EMAIL_PASS);
-
 
 exports.handleContact = async (req, res) => {
   const { name, email, message } = req.body;
@@ -29,8 +26,8 @@ exports.handleContact = async (req, res) => {
 });
 
     const mailOptions = {
-      from: process.env.EMAIL_USER, // Use your email as sender
-      to: process.env.EMAIL_RECEIVER,
+      from: process.env.EMAIL, // Use your email as sender
+      to: process.env.EMAIL,
       replyTo: email, // User's email for replies
       subject: `New Portfolio Contact: ${name}`,
       html: `
