@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 // CORS configuration for production
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://your-app-name.onrender.com'] 
+    ? ['https://portfolio-g2bs.onrender.com'] 
     : ['http://localhost:3000', 'http://127.0.0.1:5500'],
   credentials: true
 }));
