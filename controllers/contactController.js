@@ -1,5 +1,8 @@
 const nodemailer = require('nodemailer');
 const connectDB = require('../db');
+console.log('EMAIL:', process.env.EMAIL);
+console.log('EMAIL_PASS:', process.env.EMAIL_PASS);
+
 
 exports.handleContact = async (req, res) => {
   const { name, email, message } = req.body;
