@@ -12,7 +12,11 @@ const PORT = process.env.PORT || 3000;
 // CORS configuration for production
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://portfolio-g2bs.onrender.com'] 
+    ? [
+        'https://portfolio-g2bs.onrender.com',        // Your current Render frontend
+        'https://portfolio-indol-two-76.vercel.app',            // Your Vercel deployment
+        'https://your-custom-domain.com'              // If you have a custom domain
+      ] 
     : ['http://localhost:3000', 'http://127.0.0.1:5500'],
   credentials: true
 }));
