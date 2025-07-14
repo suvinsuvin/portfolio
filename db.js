@@ -2,8 +2,7 @@ const { MongoClient } = require('mongodb');
 require('dotenv').config();
 
 const client = new MongoClient(process.env.MONGODB_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+  serverApi: { version: '1' }, // Optional but good for Atlas
 });
 
 let db;
